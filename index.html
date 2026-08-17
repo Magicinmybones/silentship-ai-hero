@@ -234,6 +234,8 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
    ========================================================================== */
 .ln{display:block;overflow:clip;overflow-clip-margin:calc(6*var(--u))}
 .ln-i{display:block}
+/* portrait: the headline reflows as one continuous text block */
+@media (max-aspect-ratio:1/1){.ln,.ln-i{display:inline;overflow:visible}}
 
 @media (prefers-reduced-motion:no-preference){
   :root{
